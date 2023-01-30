@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap');
+
+//fonts 
+    $headings: 'Raleway', sans-serif;
+    $principal: 'Open Sans', sans-serif;
+
+// screen readers only class
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+// colors
+    $very-dark-blue: hsl(243, 87%, 12%);
+    $desaturated-blue: hsl(238, 22%, 44%);
+    $bright-blue: hsl(224, 93%, 58%);
+    $moderate-cyan: hsl(170, 45%, 43%);
+    $light-grayish-blue: hsl(240, 75%, 98%);
+    $light-gray: hsl(0, 0%, 75%);
+
+// font sizes 
+    $font12px: 0.75rem;
+    $font16px: 1rem;
+    $font18px: 1.125rem;
+    $font20px: 1.25rem;
+    $font24px: 1.5rem;
+
+// spacing sizes, 
+    $section-spacing: 5rem;

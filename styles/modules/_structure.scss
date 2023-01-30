@@ -1,0 +1,19 @@
+@import './variables';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $principal;
+    color: $very-dark-blue;
+    padding: 1rem;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: $section-spacing;
+        margin-top: $section-spacing;
+        margin-bottom: $section-spacing;
+    }
+}
+
