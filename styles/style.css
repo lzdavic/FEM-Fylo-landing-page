@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -39,17 +37,6 @@ body main {
   margin-bottom: 5rem;
 }
 
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -79,4 +66,57 @@ body main {
 .presentation__heading {
   font-weight: 900;
   font-size: 1.5rem;
+  line-height: 1.5em;
+}
+.presentation__text {
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+}
+.presentation__email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.25rem;
+}
+.presentation__email input[type=email] {
+  padding: 0.75rem 1rem;
+  border-radius: 0.15rem;
+  border: none;
+  outline: 1px solid black;
+}
+.presentation__email input[type=email]::-moz-placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.presentation__email input[type=email]:-ms-input-placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.presentation__email input[type=email]::placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.presentation__email input[type=submit] {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  font-weight: 700;
+  border-radius: 0.15rem;
+}
+
+.promote {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.promote__heading {
+  font-weight: 900;
+  line-height: 1.5em;
+}
+.promote__text {
+  font-size: 0.875rem;
+  line-height: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
