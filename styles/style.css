@@ -28,6 +28,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: hsl(243deg, 87%, 12%);
   padding: 1rem;
+  background-image: url(../../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 body main {
   display: flex;
@@ -35,6 +38,13 @@ body main {
   gap: 5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.footer__social {
+  display: flex;
+}
+.footer__social a img {
+  max-height: 2rem;
 }
 
 .header {
@@ -119,4 +129,28 @@ body main {
 .promote__text {
   font-size: 0.875rem;
   line-height: 1.2rem;
+  color: hsl(238deg, 22%, 44%);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.promote__see-more {
+  color: hsl(170deg, 45%, 43%);
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+}
+.promote__see-more::after {
+  content: url(../../images/icon-arrow.svg);
+  width: 1em;
+  color: hsl(170deg, 45%, 43%);
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */

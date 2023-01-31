@@ -7,6 +7,10 @@ body {
     font-family: $principal;
     color: $very-dark-blue;
     padding: 1rem;
+    background-image: url(../../images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
 
     main {
         display: flex;
@@ -17,3 +21,12 @@ body {
     }
 }
 
+.footer__social {
+    display: flex;
+    
+    a {
+        img {
+            max-height: 2rem;
+        }
+    }
+}

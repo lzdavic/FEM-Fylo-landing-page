@@ -1,0 +1,41 @@
+.promote {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+    &__heading {
+        font-weight: 900;
+        line-height: 1.5em;
+    }
+
+    &__text {
+        font-size: $font14px;
+        line-height: 1.2rem;
+        color: $desaturated-blue;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__see-more {
+        color: $moderate-cyan;
+        text-decoration: none;
+        font-size: $font12px;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $moderate-cyan;
+        width: fit-content;
+        align-self: center;
+        display: flex;
+        gap: 0.7em;
+        align-items: center;
+
+        &::after {
+            content: url(../../images/icon-arrow.svg);
+            width: 1em;
+            color: $moderate-cyan;
+            align-self: center;
+        }
+    }
+}
