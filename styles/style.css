@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;700;900&display=swap");
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -30,7 +30,7 @@ body {
   padding: 1rem;
   background-image: url(../../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 body main {
   display: flex;
@@ -153,4 +153,50 @@ body main {
   width: 1em;
   color: hsl(170deg, 45%, 43%);
   align-self: center;
+}
+.promote .testimony {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  line-height: 1.5em;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px #888888;
+}
+.promote .testimony::before {
+  content: url(../../images/icon-quotes.svg);
+}
+.promote .testimony__text {
+  font-weight: 400;
+  line-height: 1.2rem;
+  text-align: left;
+  font-size: 0.75rem;
+}
+.promote .testimony__profile {
+  display: grid;
+  height: 3rem;
+  grid-template-areas: "avatar name" "avatar cargo";
+  place-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  text-align: left;
+  line-height: 1em;
+}
+.promote .testimony__profile__avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  grid-area: avatar;
+}
+.promote .testimony__profile__name {
+  grid-area: name;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.promote .testimony__profile__cargo {
+  grid-area: cargo;
+  font-size: 0.625rem;
+  justify-self: start;
 }/*# sourceMappingURL=style.css.map */

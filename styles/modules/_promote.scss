@@ -38,4 +38,59 @@
             align-self: center;
         }
     }
+
+
+    .testimony {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.5rem;
+        line-height: 1.5em;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 10px opacify($color: #888, $amount: 0.10%);
+
+        &::before {
+            content: url(../../images/icon-quotes.svg);
+        }
+
+        &__text {
+            font-weight: 400;
+            line-height: 1.2rem;
+            text-align: left;
+            font-size: $font12px;
+        }
+
+        &__profile {
+            display: grid;
+            height: 3rem;
+            grid-template-areas: 
+            'avatar name'
+            'avatar cargo';
+            place-content: center;
+            column-gap: 0.5rem;
+            text-align: left;
+            line-height: 1em;
+
+            &__avatar {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                grid-area: avatar;
+            }
+
+            &__name {
+                grid-area: name;
+                font-weight: 700;
+                font-size: $font12px;
+            }
+
+            &__cargo {
+                grid-area: cargo;
+                font-size: $font10px;
+                justify-self: start;
+            }
+        }
+    }
 }
