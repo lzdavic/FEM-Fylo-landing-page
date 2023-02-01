@@ -1,0 +1,50 @@
+.get-started {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: $desaturated-blue;
+    color: $light-grayish-blue;
+    padding: 3rem;
+
+
+    &__heading {
+        font-size: $font20px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: $font14px;
+        font-weight: 400;
+    }
+
+    &__email {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-radius: 0.25rem;
+        margin: 0 1.5rem;
+
+        input[type=email] {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.15rem;
+            border: none;
+            outline: 1px solid black;
+
+            &::placeholder {
+                opacity: 0.5;
+                font-size: $font12px;
+            }
+        }
+
+        input[type=submit] {
+            padding: 0.5rem 0.75rem;
+            border: none;
+            background-color: $bright-blue;
+            color: $light-grayish-blue;
+            font-weight: 700;
+            border-radius: 0.15rem;
+            font-size: $font12px;
+        }
+    }
+}

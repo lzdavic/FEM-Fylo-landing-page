@@ -27,7 +27,6 @@ body {
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   color: hsl(243deg, 87%, 12%);
-  padding: 1rem;
   background-image: url(../../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,4 +198,56 @@ body main {
   grid-area: cargo;
   font-size: 0.625rem;
   justify-self: start;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  background-color: hsl(238deg, 22%, 44%);
+  color: hsl(240deg, 75%, 98%);
+  padding: 3rem;
+}
+.get-started__heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.get-started__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.get-started__email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  margin: 0 1.5rem;
+}
+.get-started__email input[type=email] {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.15rem;
+  border: none;
+  outline: 1px solid black;
+}
+.get-started__email input[type=email]::-moz-placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.get-started__email input[type=email]:-ms-input-placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.get-started__email input[type=email]::placeholder {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.get-started__email input[type=submit] {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  font-weight: 700;
+  border-radius: 0.15rem;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */
