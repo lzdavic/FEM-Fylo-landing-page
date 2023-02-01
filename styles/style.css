@@ -36,7 +36,6 @@ body main {
   flex-direction: column;
   gap: 5rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .footer__social {
@@ -250,4 +249,49 @@ body main {
   font-weight: 700;
   border-radius: 0.15rem;
   font-size: 0.75rem;
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: hsl(243deg, 87%, 12%);
+  color: white;
+}
+.footer__logo {
+  filter: invert(100%) sepia(27%) saturate(0%) hue-rotate(318deg) brightness(111%) contrast(100%);
+}
+.footer__phone {
+  display: flex;
+  gap: 1rem;
+}
+.footer__phone::before {
+  content: url(../../images/icon-phone.svg);
+}
+.footer__email {
+  display: flex;
+  gap: 1rem;
+}
+.footer__email::before {
+  content: url(../../images/icon-email.svg);
+}
+.footer__navigation, .footer__legal-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer__navigation a, .footer__legal-terms a {
+  text-decoration: none;
+  color: white;
+}
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-self: center;
+}
+.footer__social a img {
+  filter: invert(100%) sepia(27%) saturate(0%) hue-rotate(318deg) brightness(111%) contrast(100%);
 }/*# sourceMappingURL=style.css.map */
