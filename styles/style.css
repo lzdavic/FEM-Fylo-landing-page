@@ -30,6 +30,7 @@ body {
   background-image: url(../../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
 }
 body main {
   display: flex;
@@ -64,6 +65,18 @@ body main {
   color: hsl(243deg, 87%, 12%);
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 5rem;
+  }
+  .header__logo {
+    height: 3rem;
+  }
+  .header__nav {
+    font-size: 1.25rem;
+    gap: 4rem;
+  }
+}
 .presentation {
   display: flex;
   flex-direction: column;
@@ -113,6 +126,26 @@ body main {
   border-radius: 0.15rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .presentation {
+    display: grid;
+    grid-template: auto auto auto/50% 50%;
+    margin: 0 4rem;
+  }
+  .presentation__heading {
+    grid-area: 1/1/2/2;
+  }
+  .presentation__text {
+    grid-area: 2/1/3/2;
+  }
+  .presentation__email {
+    grid-area: 3/1/4/2;
+  }
+  .presentation__illustration {
+    width: -webkit-fill-available;
+    grid-area: 1/2/4/3;
+  }
+}
 .promote {
   display: flex;
   flex-direction: column;

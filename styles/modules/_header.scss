@@ -20,3 +20,18 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding: 5rem;
+
+        &__logo {
+            height: 3rem;
+        }
+
+        &__nav {
+            font-size: $font20px;
+            gap: 4rem;
+        }
+    }
+}
