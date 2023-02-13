@@ -22,6 +22,7 @@
 }
 
 body {
+  box-sizing: border-box;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +31,6 @@ body {
   background-image: url(../../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-sizing: border-box;
 }
 body main {
   display: flex;
@@ -46,6 +46,11 @@ body main {
   max-height: 2rem;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    background-position: center;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -412,6 +417,7 @@ body main {
     display: grid;
     gap: 1rem;
     grid-template-areas: "logo logo logo logo" "phone about contact social" "email about contact blank2" "blank1 about contact blank2";
+    padding: 6rem;
   }
   .footer__logo {
     grid-area: logo;
