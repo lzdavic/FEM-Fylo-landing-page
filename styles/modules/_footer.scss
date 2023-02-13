@@ -54,3 +54,47 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "phone about contact social"
+        "email about contact blank2"
+        "blank1 about contact blank2";
+
+        &__logo {
+            grid-area: logo;
+        }
+
+        &__phone {
+            grid-area: phone;
+        }
+
+        &__email {
+            grid-area: email;
+        }
+
+        &__navigation {
+            grid-area: about;
+        }
+
+        &__legal-terms {
+            grid-area: contact;
+        }
+
+        &__soccial {
+            grid-area: social;
+        }
+
+        .blank1 {
+            grid-area: blank1;
+        }
+
+        .blank2 {
+            grid-area: blank2;
+        }
+    }
+}
