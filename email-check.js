@@ -1,14 +1,16 @@
-function validateEmail() {
-    const emailInput = document.getElementById("email");
-    const emailValue = emailInput.value;
-    const emailMessage = document.getElementById("email-message");
+const inputs = document.querySelectorAll('input[type="email"]');
 
-    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailValue)) {
-        emailInput.style.borderColor = "red";
-        emailMessage.innerHTML = "Please enter a valid email address.";
-        emailMessage.style.color = "red";
-    } else {
-        emailInput.style.borderColor = "";
-        emailMessage.innerHTML = "";
-    }
-}
+inputs.forEach(function (input) {
+    input.addEventListener('blur', function () {
+        let span = input.nextElementSibling;
+        let emailValue = input.value
+        
+        if (emailValue = "" || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailValue)) {
+            input.style.borderColor = "red";
+            span.innerHTML = "check email"
+        } else {
+            input.style.borderColor = "";
+            span.innerHTML = ""
+        }
+    })
+})
