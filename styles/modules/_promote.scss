@@ -125,6 +125,11 @@
 
         &__see-more {
             grid-area: 3 / 1 / 4 / 2;
+
+            &:hover {
+                    cursor: pointer;
+                    filter: brightness(110%);
+                }
         }
 
         &__illustration {

@@ -118,6 +118,13 @@ body main {
   opacity: 0.5;
   font-size: 0.75rem;
 }
+.presentation__email input[type=email].invalid-email {
+  border: 1px solid red;
+  outline: none;
+}
+.presentation__email .advise {
+  color: red;
+}
 .presentation__email input[type=submit] {
   padding: 0.75rem 1rem;
   border: none;
@@ -125,6 +132,10 @@ body main {
   color: hsl(240deg, 75%, 98%);
   font-weight: 700;
   border-radius: 0.15rem;
+}
+.presentation__email input[type=submit]:hover {
+  cursor: pointer;
+  filter: brightness(140%);
 }
 
 @media screen and (min-width: 1200px) {
@@ -147,22 +158,24 @@ body main {
     grid-area: 2/1/3/2;
     font-size: 1.5rem;
     line-height: 1.5em;
+    grid-template-columns: 60% 40%;
   }
   .presentation__email {
     grid-area: 3/1/4/2;
-    flex-direction: row;
+    display: grid;
     height: 3rem;
     margin-right: 3rem;
   }
   .presentation__email input[type=email] {
-    width: 60%;
+    width: -webkit-fill-available;
+    grid-area: 1/1/2/2;
+  }
+  .presentation__email .advise {
+    grid-area: 2/1/3/2;
   }
   .presentation__email input[type=submit] {
-    width: 40%;
-  }
-  .presentation__email input[type=submit]:hover {
-    cursor: pointer;
-    filter: brightness(150%);
+    width: -webkit-fill-available;
+    grid-area: 1/2/2/3;
   }
   .presentation__illustration {
     width: -webkit-fill-available;
@@ -286,6 +299,10 @@ body main {
   .promote__see-more {
     grid-area: 3/1/4/2;
   }
+  .promote__see-more:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+  }
   .promote__illustration {
     width: -webkit-fill-available;
     height: -moz-min-content;
@@ -332,6 +349,10 @@ body main {
   opacity: 0.5;
   font-size: 0.75rem;
 }
+.get-started__email input[type=email].invalid-email {
+  border: 1px solid red;
+  outline: none;
+}
 .get-started__email input[type=submit] {
   padding: 0.5rem 0.75rem;
   border: none;
@@ -340,6 +361,10 @@ body main {
   font-weight: 700;
   border-radius: 0.15rem;
   font-size: 0.75rem;
+}
+.get-started__email input[type=submit]:hover {
+  cursor: pointer;
+  filter: brightness(140%);
 }
 
 @media screen and (min-width: 1200px) {
@@ -369,10 +394,6 @@ body main {
   .get-started__email input[type=submit] {
     width: 40%;
     height: 2.5rem;
-  }
-  .get-started__email input[type=submit]:hover {
-    cursor: pointer;
-    filter: brightness(150%);
   }
 }
 .footer {
