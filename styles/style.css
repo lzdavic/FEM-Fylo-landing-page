@@ -160,6 +160,10 @@ body main {
   .presentation__email input[type=submit] {
     width: 40%;
   }
+  .presentation__email input[type=submit]:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+  }
   .presentation__illustration {
     width: -webkit-fill-available;
     height: -moz-min-content;
@@ -365,6 +369,10 @@ body main {
   .get-started__email input[type=submit] {
     width: 40%;
     height: 2.5rem;
+  }
+  .get-started__email input[type=submit]:hover {
+    cursor: pointer;
+    filter: brightness(150%);
   }
 }
 .footer {

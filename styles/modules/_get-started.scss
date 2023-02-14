@@ -77,10 +77,16 @@
                     height: 1.5rem;
                 }
             
-                input[type="submit"] {
-                    width: 40%;
-                    height: 2.5rem;
-                }
+            input[type="submit"] {
+                width: 40%;
+                height: 2.5rem;
+                
+                &:hover {
+                        cursor: pointer;
+                        filter: brightness(150%);
+                    }
+            }
+
         }
     }
 }
