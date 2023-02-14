@@ -35,6 +35,11 @@
                 opacity: 0.5;
                 font-size: $font12px;
             }
+
+            &.invalid-email {
+                border: 1px solid red;
+                outline: none;
+            }
         }
 
         input[type=submit] {
@@ -45,6 +50,11 @@
             font-weight: 700;
             border-radius: 0.15rem;
             font-size: $font12px;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(140%);
+            }
         }
     }
 }
@@ -73,18 +83,13 @@
             flex-direction: column;
             
             input[type="email"] {
-                    width: 60%;
-                    height: 1.5rem;
-                }
+                width: 60%;
+                height: 1.5rem;
+            }
             
             input[type="submit"] {
                 width: 40%;
                 height: 2.5rem;
-                
-                &:hover {
-                        cursor: pointer;
-                        filter: brightness(150%);
-                    }
             }
 
         }
