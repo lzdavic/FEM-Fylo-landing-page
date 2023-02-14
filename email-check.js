@@ -5,11 +5,11 @@ inputs.forEach(function (input) {
         let span = input.nextElementSibling;
         let emailValue = input.value
         
-        if (emailValue = "" || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailValue)) {
-            input.style.borderColor = "red";
-            span.innerHTML = "check email"
+        if (emailValue = '' || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailValue)) {
+            input.classList.add("invalid-email");
+            span.innerHTML = "Please check your email";
         } else {
-            input.style.borderColor = "";
+            input.classList.remove("invalid-email");
             span.innerHTML = ""
         }
     })
